@@ -1,1 +1,1 @@
-# Inventory-management-application-for-a-store
+# Inventory-management-application
