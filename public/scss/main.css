@@ -1,0 +1,162 @@
+/* colors */
+/* Fonts */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*****General Classes*****/
+.bigTitle {
+  font-family: "Julius Sans One", sons-serif;
+  font-weight: normal;
+  font-size: 50px;
+}
+
+.smallTitle {
+  font-family: "Julius Sans One", sons-serif;
+  font-weight: normal;
+  font-size: 35px;
+}
+
+.smallerTitle {
+  font-family: "Julius Sans One", sons-serif;
+  font-weight: normal;
+  font-size: 28px;
+}
+
+.menuLink {
+  font-family: "Archivo Narrow", sons-serif;
+  font-weight: normal;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.menuLinkActive {
+  font-family: "Archivo Narrow", sons-serif;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.text {
+  font-family: "Archivo Narrow", sons-serif;
+  font-weight: normal;
+  font-size: 25px;
+}
+
+.smallText {
+  font-family: "Archivo Narrow", sons-serif;
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+}
+
+.smallLinks {
+  font-family: "Archivo Narrow", sons-serif;
+  font-weight: normal;
+  font-size: 20px;
+  letter-spacing: 0.01em;
+}
+
+.primaryBtn {
+  border-radius: 5px;
+  background: #003F5C;
+  color: #FFA600;
+  height: 50px;
+  text-align: center;
+}
+
+.secondaryBtn {
+  border-radius: 5px;
+  background: transparent;
+  border: 2px solid #FFA600;
+  color: #FFA600;
+  height: 50px;
+  text-align: center;
+}
+
+.updateBtn {
+  border-radius: 5px;
+  background: #FFA600;
+  color: #fff;
+  height: 50px;
+  text-align: center;
+}
+
+.inputs {
+  border-radius: 5px;
+  border: 2px solid #003f5c63;
+}
+
+/*****Components*****/
+.headerOne {
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 5%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.headerOne .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.headerOne .logo img {
+  height: 50%;
+}
+
+.headerOne .logo p {
+  color: #FFA600;
+  font-family: "Archivo Narrow", sons-serif;
+  font-size: clamp(18px, 24px, 30px);
+}
+
+.headerOne .link a {
+  color: #fff;
+}
+
+@media (min-width: 1200px) {
+  .headerOne .link a {
+    color: #003F5C;
+  }
+}
+
+footer {
+  height: 60px;
+  background-color: #003F5C;
+}
+
+footer p {
+  text-align: center;
+  color: #FFA600;
+  font-size: clamp(20px, 35px, 40px);
+  font-family: "Julius Sans One", sons-serif;
+}
+
+.headerTwo {
+  bottom: 0;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #003F5C;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=main.css.map */
