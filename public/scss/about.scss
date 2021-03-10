@@ -1,0 +1,115 @@
+/* colors */
+
+$primaryColor1: #003F5C;
+$primaryColor2: #FFA600;
+$secondaryColor1: #EF5675;
+$secondaryColor2: #7A5195;
+$dimmedColor: #003f5c63;
+
+/* Fonts */
+
+$fontOne: "Julius Sans One",
+sons-serif;
+$fontTwo: "Archivo Narrow",
+sons-serif;
+@mixin flex($der, $jC, $aI) {
+    display: flex;
+    flex-direction: $der;
+    justify-content: $jC;
+    align-items: $aI;
+}
+
+$breakpoints: ( 'small': 992px, 'medium': 1025px, 'large': 1200px) !default;
+@mixin respond-to($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media (min-width: map-get($breakpoints, $breakpoint)) {
+            @content;
+        }
+    }
+}
+
+.headerOne {
+    .link {
+        a {
+            color: $primaryColor1;
+            @include respond-to('large') {
+                color: $primaryColor1;
+            }
+        }
+    }
+}
+
+section {
+    padding: 100px 5%;
+    @include flex(column, start, center);
+    @include respond-to('large') {
+        @include flex(row, start, center);
+        height: 100vh;
+    }
+    .image {
+        padding: 100px 0px;
+        overflow: hidden;
+        width: 100%;
+        text-align: center;
+        margin: auto;
+        img {
+            width: 100%;
+        }
+        @include respond-to('large') {
+            padding: 100px 5%;
+            flex-basis: 200%;
+            height: 100%;
+            margin: 0px;
+        }
+    }
+    .content {
+        .textAbout {
+            padding: 5%;
+            text-align: center;
+            h1 {
+                color: $secondaryColor2;
+                margin-bottom: 30px;
+            }
+            p {
+                color: $primaryColor1;
+            }
+        }
+        .socialMedia {
+            @include flex(row, space-around, center);
+            .icon-div {
+                height: 70px;
+                width: 70px;
+                background-color: $secondaryColor1;
+                border-radius: 50%;
+                @include flex(row, center, center);
+                svg {
+                    fill: #fff;
+                    height: 31px;
+                    width: 31px;
+                }
+            }
+        }
+        form {
+            margin-top: 30px;
+            .text {
+                margin-bottom: 30px;
+                h1 {
+                    color: $secondaryColor2;
+                }
+                p {
+                    color: $secondaryColor1;
+                }
+            }
+            .form-input {
+                .inputs {
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
+            }
+            button {
+                width: 100%;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

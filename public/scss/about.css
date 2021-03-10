@@ -1,0 +1,151 @@
+/* colors */
+/* Fonts */
+.headerOne .link a {
+  color: #003F5C;
+}
+
+@media (min-width: 1200px) {
+  .headerOne .link a {
+    color: #003F5C;
+  }
+}
+
+section {
+  padding: 100px 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 1200px) {
+  section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100vh;
+  }
+}
+
+section .image {
+  padding: 100px 0px;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+section .image img {
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  section .image {
+    padding: 100px 5%;
+    -ms-flex-preferred-size: 200%;
+        flex-basis: 200%;
+    height: 100%;
+    margin: 0px;
+  }
+}
+
+section .content .textAbout {
+  padding: 5%;
+  text-align: center;
+}
+
+section .content .textAbout h1 {
+  color: #7A5195;
+  margin-bottom: 30px;
+}
+
+section .content .textAbout p {
+  color: #003F5C;
+}
+
+section .content .socialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .content .socialMedia .icon-div {
+  height: 70px;
+  width: 70px;
+  background-color: #EF5675;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .content .socialMedia .icon-div svg {
+  fill: #fff;
+  height: 31px;
+  width: 31px;
+}
+
+section .content form {
+  margin-top: 30px;
+}
+
+section .content form .text {
+  margin-bottom: 30px;
+}
+
+section .content form .text h1 {
+  color: #7A5195;
+}
+
+section .content form .text p {
+  color: #EF5675;
+}
+
+section .content form .form-input .inputs {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+section .content form button {
+  width: 100%;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=about.css.map */

@@ -1,0 +1,128 @@
+/* colors */
+
+$primaryColor1: #003F5C;
+$primaryColor2: #FFA600;
+$secondaryColor1: #EF5675;
+$secondaryColor2: #7A5195;
+$dimmedColor: #003f5c63;
+
+/* Fonts */
+
+$fontOne: "Julius Sans One",
+sons-serif;
+$fontTwo: "Archivo Narrow",
+sons-serif;
+@mixin flex($der, $jC, $aI) {
+    display: flex;
+    flex-direction: $der;
+    justify-content: $jC;
+    align-items: $aI;
+}
+
+$breakpoints: ( 'small': 992px, 'medium': 1025px, 'large': 1200px) !default;
+@mixin respond-to($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media (min-width: map-get($breakpoints, $breakpoint)) {
+            @content;
+        }
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.addSection {
+    @include flex(column, center, center);
+    @include respond-to('medium') {
+        @include flex(row, center, center);
+    }
+    .addForm {
+        width: 100%;
+        @include respond-to('medium') {
+            flex-basis: 50%;
+        }
+        h1 {
+            color: $secondaryColor2;
+        }
+        form {
+            margin-top: 30px;
+            .form-input {
+                margin-bottom: 30px;
+                label {
+                    display: block;
+                    margin-bottom: 20px;
+                }
+                .inputs {
+                    width: 100%;
+                }
+                .textArea {
+                    height: 200px;
+                }
+                .upload {
+                    width: 280px;
+                    height: 150px;
+                    background-color: #7a51955d;
+                    border-radius: 10px;
+                    color: $secondaryColor2;
+                    @include flex(column, center, center);
+                    svg {
+                        height: 62px;
+                        width: 62px;
+                        margin: 0;
+                        fill: $secondaryColor2;
+                    }
+                }
+                .uploadBtn {
+                    visibility: hidden;
+                }
+            }
+            button {
+                width: 100%;
+            }
+            .buttons {
+                @include flex(column, center, center);
+                button {
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+                @include respond-to('small') {
+                    @include flex(row, space-between, center);
+                    button {
+                        width: 45%;
+                    }
+                }
+            }
+            .imageUpload {
+                @include flex(column, center, center);
+                @include respond-to('medium') {
+                    @include flex(row, space-between, center);
+                }
+                .lastImage {
+                    width: 280px;
+                    height: 150px;
+                    overflow: hidden;
+                    border-radius: 10px;
+                    display: inline-block;
+                    margin-bottom: 50px;
+                    img {
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    .image {
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+        @include respond-to('medium') {
+            flex-basis: 50%;
+            width: 100%;
+        }
+    }
+}

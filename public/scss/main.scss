@@ -19,7 +19,7 @@ sons-serif;
     align-items: $aI;
 }
 
-$breakpoints: ( 'small': 992px, 'medium': 1024px, 'large': 1200px) !default;
+$breakpoints: ( 'small': 992px, 'medium': 1025px, 'large': 1200px) !default;
 @mixin respond-to($breakpoint) {
     @if map-has-key($breakpoints, $breakpoint) {
         @media (min-width: map-get($breakpoints, $breakpoint)) {
@@ -100,6 +100,9 @@ $breakpoints: ( 'small': 992px, 'medium': 1024px, 'large': 1200px) !default;
     color: #FFA600;
     height: 50px;
     text-align: center;
+    border: none;
+    font-family: $fontTwo;
+    font-size: 25px;
 }
 
 .secondaryBtn {
@@ -109,6 +112,8 @@ $breakpoints: ( 'small': 992px, 'medium': 1024px, 'large': 1200px) !default;
     color: #FFA600;
     height: 50px;
     text-align: center;
+    font-family: $fontTwo;
+    font-size: 25px;
 }
 
 .updateBtn {
@@ -117,11 +122,83 @@ $breakpoints: ( 'small': 992px, 'medium': 1024px, 'large': 1200px) !default;
     color: #fff;
     height: 50px;
     text-align: center;
+    font-family: $fontTwo;
+    font-size: 25px;
+    border: none;
 }
 
 .inputs {
     border-radius: 5px;
     border: 2px solid #003f5c63;
+    height: 50px;
+    font-family: $fontTwo;
+    font-size: 25px;
+    padding: 0px 10px;
+}
+
+.search {
+    position: relative;
+    width: 50px;
+    display: inline-block;
+    transition: width 1s ease-in-out;
+    @include respond-to('medium') {
+        width: 40%;
+    }
+    .searchInput {
+        border-radius: 25px;
+        box-shadow: 0px 0px 13px rgba(0, 63, 92, 0.4);
+        width: 100%;
+    }
+    .btn {
+        height: 40px;
+        width: 40px;
+        border-radius: 24px;
+        background-color: $primaryColor1;
+        border: none;
+        @include flex(row, center, center);
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        svg {
+            height: 30px;
+            width: 30px;
+            fill: $primaryColor2;
+        }
+    }
+    .showBtn {
+        background-color: #fff;
+        border: $primaryColor2;
+        @include respond-to('medium') {
+            display: none;
+        }
+    }
+}
+
+.searchStretch {
+    width: 80%;
+}
+
+.add {
+    position: relative;
+    @include respond-to('medium') {
+        width: 40%;
+    }
+    a {
+        text-decoration: none;
+        width: 50px;
+        border-radius: 25px;
+        @include flex(row, center, center);
+        span {
+            display: none;
+        }
+        @include respond-to('medium') {
+            width: 100%;
+            border-radius: 5px;
+            span {
+                display: inline-block;
+            }
+        }
+    }
 }
 
 
@@ -133,16 +210,21 @@ $breakpoints: ( 'small': 992px, 'medium': 1024px, 'large': 1200px) !default;
     padding: 10px 5%;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    position: absolute;
     .logo {
-        display: flex;
-        align-items: center;
-        img {
-            height: 50%;
-        }
-        p {
-            color: $primaryColor2;
-            font-family: $fontTwo;
-            font-size: clamp(18px, 24px, 30px);
+        a {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            img {
+                height: 50%;
+            }
+            p {
+                color: $primaryColor2;
+                font-family: $fontTwo;
+                font-size: clamp(18px, 24px, 30px);
+            }
         }
     }
     .link {
@@ -201,7 +283,7 @@ footer {
 main {
     @include flex(row, center, center);
     @include respond-to('medium') {
-        @include flex(row-reverse, center, center);
+        @include flex(row-reverse, center, start);
         // background-color: red;
     }
     nav {
@@ -278,5 +360,9 @@ main {
                 }
             }
         }
+    }
+    section {
+        padding: 5%;
+        width: 100%;
     }
 }

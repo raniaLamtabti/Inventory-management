@@ -1,0 +1,101 @@
+/* colors */
+
+$primaryColor1: #003f5c;
+$primaryColor2: #ffa600;
+$secondaryColor1: #ef5675;
+$secondaryColor2: #7a5195;
+$dimmedColor: #003f5c63;
+
+/* Fonts */
+
+$fontOne: "Julius Sans One", sons-serif;
+$fontTwo: "Archivo Narrow", sons-serif;
+@mixin flex($display, $fd, $jc, $ai) {
+  display: $display;
+  flex-direction: $fd;
+  justify-content: $jc;
+  align-items: $ai;
+}
+
+$breakpoints: (
+  "small": 992px,
+  "medium": 1024px,
+  "large": 1200px,
+) !default;
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+}
+
+.profedit {
+
+  .info {
+    @include flex(flex, column, center, center);
+    margin-top: 5vh;
+
+    .image {
+      width: 200px;
+      height: 200px;
+      overflow: hidden;
+      border-radius: 100px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .lefty {
+      @include flex(flex, column, left, baseline) .full_name {
+        font-family: "Julius Sans One";
+        font-weight: normal;
+        font-size: 35px;
+        text-align: center;
+        color: #000;
+      }
+
+      .email {
+        font-family: "Julius Sans One";
+        font-weight: normal;
+        font-size: 28px;
+        text-align: center;
+        color: #ffa600;
+      }
+
+      .pob {
+        font-family: "Julius Sans One";
+        font-weight: normal;
+        font-size: 28px;
+        text-align: center;
+        color: #ffa600;
+      }
+    }
+  }
+
+  .updtinfo{
+      @include flex(flex, column, center, center);
+        margin: 5vh;
+
+    .inputs{
+        width: 85vw;
+        margin: 5px;
+        
+    }
+  }
+
+  .pw{
+      
+    font-family: Archivo;
+    font-weight: normal;
+    font-size: 20px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #ef5675;
+    margin-left: 8vw;
+
+
+  }
+
+}

@@ -1,0 +1,221 @@
+/* colors */
+/* Fonts */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.addSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 1025px) {
+  .addSection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.addSection .addForm {
+  width: 100%;
+}
+
+@media (min-width: 1025px) {
+  .addSection .addForm {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
+.addSection .addForm h1 {
+  color: #7A5195;
+}
+
+.addSection .addForm form {
+  margin-top: 30px;
+}
+
+.addSection .addForm form .form-input {
+  margin-bottom: 30px;
+}
+
+.addSection .addForm form .form-input label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.addSection .addForm form .form-input .inputs {
+  width: 100%;
+}
+
+.addSection .addForm form .form-input .textArea {
+  height: 200px;
+}
+
+.addSection .addForm form .form-input .upload {
+  width: 280px;
+  height: 150px;
+  background-color: #7a51955d;
+  border-radius: 10px;
+  color: #7A5195;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.addSection .addForm form .form-input .upload svg {
+  height: 62px;
+  width: 62px;
+  margin: 0;
+  fill: #7A5195;
+}
+
+.addSection .addForm form .form-input .uploadBtn {
+  visibility: hidden;
+}
+
+.addSection .addForm form button {
+  width: 100%;
+}
+
+.addSection .addForm form .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.addSection .addForm form .buttons button {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+  .addSection .addForm form .buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .addSection .addForm form .buttons button {
+    width: 45%;
+  }
+}
+
+.addSection .addForm form .imageUpload {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 1025px) {
+  .addSection .addForm form .imageUpload {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.addSection .addForm form .imageUpload .lastImage {
+  width: 280px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 10px;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+.addSection .addForm form .imageUpload .lastImage img {
+  height: 100%;
+  width: 100%;
+}
+
+.addSection .image {
+  overflow: hidden;
+}
+
+.addSection .image img {
+  width: 100%;
+}
+
+@media (min-width: 1025px) {
+  .addSection .image {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=add.css.map */

@@ -1,0 +1,51 @@
+/* colors */
+
+$primaryColor1: #003F5C;
+$primaryColor2: #FFA600;
+$secondaryColor1: #EF5675;
+$secondaryColor2: #7A5195;
+$dimmedColor: #003f5c63;
+
+/* Fonts */
+
+$fontOne: "Julius Sans One",
+sons-serif;
+$fontTwo: "Archivo Narrow",
+sons-serif;
+@mixin flex($der, $jC, $aI) {
+    display: flex;
+    flex-direction: $der;
+    justify-content: $jC;
+    align-items: $aI;
+}
+
+$breakpoints: ( 'small': 992px, 'medium': 1025px, 'large': 1200px) !default;
+@mixin respond-to($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media (min-width: map-get($breakpoints, $breakpoint)) {
+            @content;
+        }
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.categories {
+    .topBar {
+        @include flex(row, space-between, center);
+        .addSection {
+            flex-basis: 50%;
+            @include flex(row, space-between, center);
+            .inputs {
+                width: 50%;
+            }
+            button {
+                width: 50%;
+            }
+        }
+    }
+}

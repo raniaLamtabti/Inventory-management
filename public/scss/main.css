@@ -71,6 +71,9 @@
   color: #FFA600;
   height: 50px;
   text-align: center;
+  border: none;
+  font-family: "Archivo Narrow", sons-serif;
+  font-size: 25px;
 }
 
 .secondaryBtn {
@@ -80,6 +83,8 @@
   color: #FFA600;
   height: 50px;
   text-align: center;
+  font-family: "Archivo Narrow", sons-serif;
+  font-size: 25px;
 }
 
 .updateBtn {
@@ -88,11 +93,127 @@
   color: #fff;
   height: 50px;
   text-align: center;
+  font-family: "Archivo Narrow", sons-serif;
+  font-size: 25px;
+  border: none;
 }
 
 .inputs {
   border-radius: 5px;
   border: 2px solid #003f5c63;
+  height: 50px;
+  font-family: "Archivo Narrow", sons-serif;
+  font-size: 25px;
+  padding: 0px 10px;
+}
+
+.search {
+  position: relative;
+  width: 50px;
+  display: inline-block;
+  -webkit-transition: width 1s ease-in-out;
+  transition: width 1s ease-in-out;
+}
+
+@media (min-width: 1025px) {
+  .search {
+    width: 40%;
+  }
+}
+
+.search .searchInput {
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 0px 13px rgba(0, 63, 92, 0.4);
+          box-shadow: 0px 0px 13px rgba(0, 63, 92, 0.4);
+  width: 100%;
+}
+
+.search .btn {
+  height: 40px;
+  width: 40px;
+  border-radius: 24px;
+  background-color: #003F5C;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
+.search .btn svg {
+  height: 30px;
+  width: 30px;
+  fill: #FFA600;
+}
+
+.search .showBtn {
+  background-color: #fff;
+  border: #FFA600;
+}
+
+@media (min-width: 1025px) {
+  .search .showBtn {
+    display: none;
+  }
+}
+
+.searchStretch {
+  width: 80%;
+}
+
+.add {
+  position: relative;
+}
+
+@media (min-width: 1025px) {
+  .add {
+    width: 40%;
+  }
+}
+
+.add a {
+  text-decoration: none;
+  width: 50px;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.add a span {
+  display: none;
+}
+
+@media (min-width: 1025px) {
+  .add a {
+    width: 100%;
+    border-radius: 5px;
+  }
+  .add a span {
+    display: inline-block;
+  }
 }
 
 /*****Components*****/
@@ -108,22 +229,25 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
+  position: absolute;
 }
 
-.headerOne .logo {
+.headerOne .logo a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-decoration: none;
 }
 
-.headerOne .logo img {
+.headerOne .logo a img {
   height: 50%;
 }
 
-.headerOne .logo p {
+.headerOne .logo a p {
   color: #FFA600;
   font-family: "Archivo Narrow", sons-serif;
   font-size: clamp(18px, 24px, 30px);
@@ -206,7 +330,7 @@ footer p {
   display: none;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .headerTwo .profile a p {
     display: inline-block;
     color: #7A5195;
@@ -241,7 +365,7 @@ main {
           align-items: center;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   main {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -253,9 +377,9 @@ main {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
   }
 }
 
@@ -270,7 +394,7 @@ main nav {
   border-top-right-radius: 5px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   main nav {
     position: relative;
     padding: 50px 0px;
@@ -297,7 +421,7 @@ main nav .navbar-nav {
           align-items: space-around;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   main nav .navbar-nav {
     height: 100%;
     display: -webkit-box;
@@ -332,7 +456,7 @@ main nav .navbar-nav .nav-link a p {
   display: none;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   main nav .navbar-nav .nav-link {
     width: 130px;
     margin-bottom: 50px;
@@ -351,7 +475,7 @@ main nav .navbar-nav .logOut {
   display: none;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   main nav .navbar-nav .logOut {
     display: inline;
     margin-bottom: 0px;
@@ -366,5 +490,10 @@ main nav .navbar-nav .logOut {
     color: #EF5675;
     display: inline;
   }
+}
+
+main section {
+  padding: 5%;
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
