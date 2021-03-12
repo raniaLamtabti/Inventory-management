@@ -127,6 +127,17 @@ $breakpoints: ( 'small': 992px, 'medium': 1025px, 'large': 1200px) !default;
     border: none;
 }
 
+.deleteBtn {
+    border-radius: 5px;
+    background: $secondaryColor1;
+    color: #fff;
+    height: 50px;
+    text-align: center;
+    font-family: $fontTwo;
+    font-size: 25px;
+    border: none;
+}
+
 .inputs {
     border-radius: 5px;
     border: 2px solid #003f5c63;
@@ -183,7 +194,7 @@ $breakpoints: ( 'small': 992px, 'medium': 1025px, 'large': 1200px) !default;
     @include respond-to('medium') {
         width: 40%;
     }
-    a {
+    .secondaryBtn {
         text-decoration: none;
         width: 50px;
         border-radius: 25px;
@@ -199,6 +210,14 @@ $breakpoints: ( 'small': 992px, 'medium': 1025px, 'large': 1200px) !default;
             }
         }
     }
+}
+
+.errorSpan {
+    font-family: $fontTwo;
+    font-size: 18px;
+    margin-top: 20px;
+    display: none;
+    color: $secondaryColor1;
 }
 
 

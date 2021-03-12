@@ -16,11 +16,10 @@
             <img src="public/assets/icones/Logo.svg" alt="">
         </div>
         <div class="profile">
-            <a href="" class="profileLink">
+            <a href="profile.html" class="profileLink">
                 <p class="menuLinkActive">Lori Bailey</p>
                 <div class="profileImg">
-                    <img src="public/assets/images/Profile Image.jpg" alt="">
-
+                    <img src="public/assets/images/Profile Image.jpg" alt="" />
                 </div>
             </a>
         </div>
@@ -29,7 +28,7 @@
         <section class="addSection">
             <div class="addForm">
                 <h1 class="bigTitle">Update Product</h1>
-                <form action="">
+                <form action="" id="product">
                     <div class="form-input">
                         <label for="" class="text">Product Code</label>
                         <input type="text" class="inputs">
@@ -50,15 +49,17 @@
                     </div>
                     <div class="form-input">
                         <label for="" class="text">Sale Price</label>
-                        <input type="text" class="inputs">
+                        <input type="text" class="price inputs">
+                        <span class="errorSpan">. The sale price is incorrect</span>
                     </div>
                     <div class="form-input">
                         <label for="" class="text">Our Price</label>
-                        <input type="text" class="inputs">
+                        <input type="text" class="price inputs">
+                        <span class="errorSpan">. Your price is incorrect</span>
                     </div>
                     <div class="buttons">
                         <button class="updateBtn" type="submit">Update Product</button>
-                        <button class="secondaryBtn" type="submit">Update Quantity</button>
+                        <button class="secondaryBtn">Update Quantity</button>
                     </div>
                 </form>
             </div>
@@ -69,7 +70,7 @@
         <nav class="navbar">
             <ul class="navbar-nav">
                 <li class="nav-link">
-                    <a href="">
+                    <a href="index.html">
                         <svg class="icon">
                             <use href="public/assets/icones/svg_icones.svg#dashboard" />
                         </svg>
@@ -77,7 +78,7 @@
                     </a>
                 </li>
                 <li class="nav-link">
-                    <a href="">
+                    <a href="Products.html">
                         <svg class="icon">
                             <use href="public/assets/icones/svg_icones.svg#box" />
                         </svg>
@@ -85,7 +86,7 @@
                     </a>
                 </li>
                 <li class="nav-link">
-                    <a href="">
+                    <a href="store.html">
                         <svg class="icon">
                             <use href="public/assets/icones/svg_icones.svg#store" />
                         </svg>
@@ -93,7 +94,7 @@
                     </a>
                 </li>
                 <li class="nav-link">
-                    <a href="">
+                    <a href="categories.html">
                         <svg xmlns="http://www.w3.org/2000/svg" id="cat" viewBox="0 0 314 313" class="icon">
                             <g id="Layer_2" data-name="Layer 2">
                               <g id="Layer_1-2" data-name="Layer 1">
@@ -108,7 +109,7 @@
                     </a>
                 </li>
                 <li class="nav-link logOut">
-                    <a href="">
+                    <a href="login.html">
                         <svg class="icon">
                             <use href="public/assets/icones/svg_icones.svg#sign-out" />
                         </svg>
@@ -119,6 +120,25 @@
 
         </nav>
     </main>
+    <script>
+        const pricePattern = /^\d*(\.\d+)?$/;
+
+        var formProduct = document.querySelector("#product");
+
+        formProduct.addEventListener('submit', (e) => {
+            e.preventDefault();
+            input = formProduct.querySelectorAll('.form-input .price');
+
+            input.forEach((e) => {
+                if (!pricePattern.test(e.value)) {
+                    e.nextElementSibling.style.display = "inline";
+                } else {
+                    e.nextElementSibling.style.display = "none";
+                }
+            })
+
+        })
+    </script>
 </body>
 
 </html>

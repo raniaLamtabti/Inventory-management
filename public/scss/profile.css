@@ -1,5 +1,31 @@
 /* colors */
 /* Fonts */
+.profedit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: fill-available;
+  padding-bottom: 75px;
+}
+
+@media (min-width: 1200px) {
+  .profedit {
+    padding: 0;
+  }
+}
+
 .profedit .info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17,16 +43,67 @@
   margin-top: 5vh;
 }
 
-.profedit .info .image {
+@media (min-width: 1024px) {
+  .profedit .info {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
+    margin-left: 50px;
+  }
+}
+
+.profedit .info .imageUpld {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.profedit .info .imageUpld .image {
   width: 200px;
   height: 200px;
   overflow: hidden;
   border-radius: 100px;
 }
 
-.profedit .info .image img {
+.profedit .info .imageUpld .image img {
   width: 100%;
   height: 100%;
+}
+
+.profedit .info .imageUpld label {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #7a519577;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+}
+
+.profedit .info .imageUpld label svg {
+  height: 30px;
+  width: 30px;
+  fill: #7a5195;
+}
+
+.profedit .info .imageUpld input {
+  visibility: hidden;
 }
 
 .profedit .info .lefty {
@@ -43,6 +120,13 @@
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  margin: 20px 0;
+}
+
+@media (min-width: 1024px) {
+  .profedit .info .lefty {
+    margin: 20px;
+  }
 }
 
 .profedit .info .lefty .full_name {
@@ -51,6 +135,7 @@
   font-size: 35px;
   text-align: center;
   color: #000;
+  margin: 20px;
 }
 
 .profedit .info .lefty .email {
@@ -59,6 +144,7 @@
   font-size: 28px;
   text-align: center;
   color: #ffa600;
+  margin: 20px;
 }
 
 .profedit .info .lefty .pob {
@@ -67,9 +153,33 @@
   font-size: 28px;
   text-align: center;
   color: #ffa600;
+  margin: 20px;
 }
 
-.profedit .updtinfo {
+.profedit .content {
+  padding: 3%;
+}
+
+@media (min-width: 1200px) {
+  .profedit .content {
+    padding: 3% 3% 0% 3%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: space-between;
+        -ms-flex-align: space-between;
+            align-items: space-between;
+  }
+}
+
+.profedit .content .form .updtinfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -83,15 +193,48 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 5vh;
 }
 
-.profedit .updtinfo .inputs {
+@media (min-width: 1200px) {
+  .profedit .content .form .updtinfo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: space-between;
+        -ms-flex-align: space-between;
+            align-items: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+.profedit .content .form .updtinfo div {
+  width: 40%;
+}
+
+.profedit .content .form .updtinfo div .inputs {
   width: 85vw;
   margin: 5px;
 }
 
-.profedit .pw {
+@media (min-width: 1200px) {
+  .profedit .content .form .updtinfo div .inputs {
+    margin: 20px;
+    width: 100%;
+  }
+}
+
+.profedit .content .form .pw {
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
   font-family: Archivo;
   font-weight: normal;
   font-size: 20px;
@@ -99,5 +242,179 @@
   text-align: left;
   color: #ef5675;
   margin-left: 8vw;
+  text-decoration: underline;
+  margin: 4vh;
+}
+
+.profedit .content .form .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profedit .content .form .btns .primaryBtn {
+  width: 85vw;
+  margin: 5px;
+}
+
+@media (min-width: 1200px) {
+  .profedit .content .form .btns .primaryBtn {
+    width: 40vh;
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
+    margin: 15px 0px;
+  }
+}
+
+.profedit .content .form .btns .secondaryBtn {
+  width: 85vw;
+  margin: 5px;
+}
+
+@media (min-width: 1200px) {
+  .profedit .content .form .btns .secondaryBtn {
+    width: 40vh;
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
+    margin: 15px 0px;
+  }
+}
+
+.profedit .content .form .btns .logoutBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .profedit .content .form .btns .logoutBtn {
+    display: none;
+  }
+}
+
+.profedit .content .form .btns .logoutBtn .icon {
+  width: 15px;
+  height: 15px;
+  fill: #ef5675;
+  margin: 5px;
+}
+
+.profedit .content .form .btns .logoutBtn .logOut {
+  font-family: Archivo;
+  font-weight: normal;
+  font-size: 20px;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #ef5675;
+  margin: 5px;
+}
+
+.profedit .content .form .btns .warning {
+  visibility: hidden;
+  font-family: Archivo;
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  color: #ef5675;
+  margin: 5px;
+}
+
+@media (min-width: 1024px) {
+  .profedit .content .form .btns .warning {
+    visibility: visible;
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
+  }
+}
+
+.profedit .content .bigHomoArt {
+  width: 350px;
+  height: 260px;
+}
+
+@media (min-width: 1024px) {
+  .profedit .content .bigHomoArt {
+    width: 457px;
+    height: 335px;
+  }
+}
+
+.modalDiv {
+  width: 100%;
+  height: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.modalDiv .model {
+  border-radius: 10px;
+  padding: 3%;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
+  position: relative;
+  width: 60%;
+  margin: auto;
+  -webkit-transition: 400ms;
+  transition: 400ms;
+}
+
+.modalDiv .model h1 {
+  margin-bottom: 30px;
+}
+
+.modalDiv .model .close {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  display: block;
+}
+
+.modalDiv .model .close svg {
+  height: 20px;
+  width: 20px;
+  fill: #ef5675;
+}
+
+.modalDiv .model .addModalSection .inputs {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.modalDiv .model .addModalSection .btn {
+  width: 100%;
+}
+
+.modalDiv .passwordModel {
+  -webkit-transform: translateY(-200%);
+          transform: translateY(-200%);
+  z-index: 2;
+}
+
+.modalDiv .activeModel {
+  -webkit-transform: translateY(-300%);
+          transform: translateY(-300%);
+  z-index: 2;
 }
 /*# sourceMappingURL=profile.css.map */

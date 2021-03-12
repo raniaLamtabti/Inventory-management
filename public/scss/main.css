@@ -98,6 +98,17 @@
   border: none;
 }
 
+.deleteBtn {
+  border-radius: 5px;
+  background: #EF5675;
+  color: #fff;
+  height: 50px;
+  text-align: center;
+  font-family: "Archivo Narrow", sons-serif;
+  font-size: 25px;
+  border: none;
+}
+
 .inputs {
   border-radius: 5px;
   border: 2px solid #003f5c63;
@@ -183,7 +194,7 @@
   }
 }
 
-.add a {
+.add .secondaryBtn {
   text-decoration: none;
   width: 50px;
   border-radius: 25px;
@@ -202,18 +213,26 @@
           align-items: center;
 }
 
-.add a span {
+.add .secondaryBtn span {
   display: none;
 }
 
 @media (min-width: 1025px) {
-  .add a {
+  .add .secondaryBtn {
     width: 100%;
     border-radius: 5px;
   }
-  .add a span {
+  .add .secondaryBtn span {
     display: inline-block;
   }
+}
+
+.errorSpan {
+  font-family: "Archivo Narrow", sons-serif;
+  font-size: 18px;
+  margin-top: 20px;
+  display: none;
+  color: #EF5675;
 }
 
 /*****Components*****/
