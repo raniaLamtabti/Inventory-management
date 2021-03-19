@@ -84,13 +84,18 @@ $breakpoints: ( 'small': 992px, 'medium': 1025px, 'large': 1200px) !default;
             }
             .buttons {
                 @include flex(column, center, center);
-                button {
+                button,
+                a {
                     width: 100%;
                     margin-bottom: 20px;
                 }
+                a {
+                    text-decoration: none;
+                }
                 @include respond-to('small') {
                     @include flex(row, space-between, center);
-                    button {
+                    button,
+                    a {
                         width: 45%;
                     }
                 }

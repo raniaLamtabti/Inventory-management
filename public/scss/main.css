@@ -118,6 +118,14 @@
   padding: 0px 10px;
 }
 
+.navLinkActive p {
+  color: #FFA600 !important;
+}
+
+.navLinkActive svg {
+  fill: #FFA600 !important;
+}
+
 .search {
   position: relative;
   width: 50px;

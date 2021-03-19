@@ -147,6 +147,15 @@ $breakpoints: ( 'small': 992px, 'medium': 1025px, 'large': 1200px) !default;
     padding: 0px 10px;
 }
 
+.navLinkActive {
+    p {
+        color: $primaryColor2 !important;
+    }
+    svg {
+        fill: $primaryColor2 !important;
+    }
+}
+
 .search {
     position: relative;
     width: 50px;

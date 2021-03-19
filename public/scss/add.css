@@ -129,9 +129,14 @@
           align-items: center;
 }
 
-.addSection .addForm form .buttons button {
+.addSection .addForm form .buttons button,
+.addSection .addForm form .buttons a {
   width: 100%;
   margin-bottom: 20px;
+}
+
+.addSection .addForm form .buttons a {
+  text-decoration: none;
 }
 
 @media (min-width: 992px) {
@@ -150,7 +155,8 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  .addSection .addForm form .buttons button {
+  .addSection .addForm form .buttons button,
+  .addSection .addForm form .buttons a {
     width: 45%;
   }
 }
