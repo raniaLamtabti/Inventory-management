@@ -1,119 +1,69 @@
 /* colors */
 /* Fonts */
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 .categories .topBar {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .categories .topBar .addSection {
   visibility: hidden;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex-basis: 50%;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .categories .topBar .addSection .inputs {
   width: 50%;
 }
-
 .categories .topBar .addSection button {
   width: 50%;
 }
-
 @media (min-width: 1025px) {
   .categories .topBar .addSection {
     visibility: visible;
   }
 }
-
 @media (min-width: 1025px) {
   .categories .topBar .add {
     display: none;
   }
 }
-
 .categories .content {
   margin-top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 30px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
-
 .categories .content .category {
   min-width: 310px;
   text-align: center;
   border-radius: 10px;
   padding: 3%;
   background-color: #fff;
-  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
 }
-
 .categories .content .category .smallerTitle {
   color: #003F5C;
   margin-bottom: 50px;
 }
-
 .categories .content .category .actions {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 50px;
 }
-
 .categories .content .category .actions button {
   border: none;
   background-color: transparent;
@@ -121,16 +71,13 @@
   width: -moz-max-content;
   width: max-content;
 }
-
 .categories .content .category .actions button svg {
   height: 19px;
   width: 21px;
 }
-
 .categories .content .category .actions button .delete {
   fill: #EF5675;
 }
-
 .categories .content .category .actions button .edit {
   fill: #FFA600;
 }
@@ -141,55 +88,42 @@
   top: 0;
   z-index: 2;
 }
-
 .modalDiv .model {
   border-radius: 10px;
   padding: 3%;
   background-color: #fff;
-  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.16);
   position: relative;
   width: 60%;
   margin: auto;
-  -webkit-transition: 400ms;
   transition: 400ms;
 }
-
 .modalDiv .model h1 {
   margin-bottom: 30px;
 }
-
 .modalDiv .model .close {
   position: absolute;
   right: 5%;
   top: 5%;
   display: block;
 }
-
 .modalDiv .model .close svg {
   height: 20px;
   width: 20px;
   fill: #EF5675;
 }
-
 .modalDiv .model .addModalSection .inputs {
   width: 100%;
   margin-bottom: 30px;
 }
-
 .modalDiv .model .addModalSection .btn {
   width: 100%;
 }
-
 .modalDiv .addModel {
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  transform: translateY(-100%);
   z-index: 2;
 }
-
 .modalDiv .updateModel {
-  -webkit-transform: translateY(-200%);
-          transform: translateY(-200%);
+  transform: translateY(-200%);
   z-index: 2;
-}
-/*# sourceMappingURL=categories.css.map */
+}/*# sourceMappingURL=categories.css.map */

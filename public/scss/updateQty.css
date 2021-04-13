@@ -1,8 +1,7 @@
 /* colors */
 /* Fonts */
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -10,150 +9,98 @@
 .updateSection h1 {
   color: #7A5195;
 }
-
 .updateSection .content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: Start;
-      -ms-flex-align: Start;
-          align-items: Start;
+  flex-direction: column;
+  justify-content: center;
+  align-items: Start;
 }
-
 @media (min-width: 1025px) {
   .updateSection .content {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
   }
 }
-
 .updateSection .content .updateForm {
   width: 100%;
 }
-
 @media (min-width: 1025px) {
   .updateSection .content .updateForm {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
+    flex-basis: 50%;
   }
 }
-
 .updateSection .content .updateForm form {
   margin-top: 30px;
 }
-
 .updateSection .content .updateForm form .form-input {
   margin-bottom: 30px;
 }
-
 .updateSection .content .updateForm form .form-input label {
   display: block;
   margin-bottom: 20px;
 }
-
 .updateSection .content .updateForm form .form-input .inputs {
   width: 100%;
 }
-
 .updateSection .content .updateForm form .form-input .textArea {
   height: 200px;
 }
-
 .updateSection .content .updateForm form .form-input .upload {
   width: 280px;
   height: 120px;
   background-color: #7a51955d;
   border-radius: 10px;
   color: #7A5195;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
 .updateSection .content .updateForm form .form-input .upload svg {
   height: 62px;
   width: 62px;
   margin: 0;
   fill: #7A5195;
 }
-
 .updateSection .content .updateForm form .form-input .uploadBtn {
   visibility: hidden;
 }
-
 .updateSection .content .updateForm form button {
   width: 100%;
 }
-
 .updateSection .content .updateForm .image {
   overflow: hidden;
 }
-
 .updateSection .content .updateForm .image img {
   width: 100%;
 }
-
 @media (min-width: 1025px) {
   .updateSection .content .updateForm .image {
     width: 100%;
   }
 }
-
 .updateSection .content .qtyList {
   border-spacing: 10px;
 }
-
 @media (min-width: 1025px) {
   .updateSection .content .qtyList {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
+    flex-basis: 50%;
     width: 100%;
     margin-left: 50px;
   }
 }
-
 .updateSection .content .qtyList tr {
   height: 45px;
   border-radius: 5px;
-  -webkit-box-shadow: 0px 0px 13px rgba(0, 63, 92, 0.4);
-          box-shadow: 0px 0px 13px rgba(0, 63, 92, 0.4);
+  box-shadow: 0px 0px 13px rgba(0, 63, 92, 0.4);
   background-color: #fff;
   margin: 50px 0;
 }
-
 .updateSection .content .qtyList thead {
   color: #EF5675;
 }
-
 .updateSection .content .qtyList tbody tr td {
   text-align: center;
-}
-/*# sourceMappingURL=updateQty.css.map */
+}/*# sourceMappingURL=updateQty.css.map */

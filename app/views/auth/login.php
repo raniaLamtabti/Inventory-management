@@ -1,5 +1,6 @@
 <?php
 $cssLink = "../../../public/scss/login.css";
+$cssMain = "../../../public/scss/main.css";
 $title = "LogIn";
 ?>
 

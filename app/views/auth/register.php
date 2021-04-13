@@ -1,5 +1,6 @@
 <?php
 $cssLink = "../../../public/scss/login.css";
+$cssMain = "../../../public/scss/main.css";
 $title = "Register";
 ?>
 
@@ -12,9 +13,9 @@ $title = "Register";
     </div>
     <div class="login">
         <div class="links">
-            <a href="login.html" class="menuLink">Login</a>
+            <a href="login.php" class="menuLink">Login</a>
             <p>|</p>
-            <a href="register.html" class="menuLinkActive">Register</a>
+            <a href="register.php" class="menuLinkActive">Register</a>
         </div>
         <div class="topText">
             <h1 class="bigTitle">Login to your account</h1>

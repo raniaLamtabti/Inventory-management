@@ -3,14 +3,6 @@ require_once 'database.php';
 
 class User
 {
-    // public function insert($firstname, $lastname, $username, $email, $photo, $password)
-    // {
-    //     $db = new Database;
-    //     $pdo = $db->connect();
-    //     $req = $pdo->exec('INSERT INTO user SET username="' . $username . '", password="' . $password . '", email="' . $email . '", firstname="' . $firstname . '", lastname="' . $lastname . '", photo="' . $photo . '"');
-    //     var_dump($req);
-    // }
-
     public function fetch($username, $password)
     {
         $id = 0;

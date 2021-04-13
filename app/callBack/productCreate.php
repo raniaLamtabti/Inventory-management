@@ -12,7 +12,6 @@ $priceSale = $_POST['priceSale'];
 
 $product = new Product;
 $product->create($code, $name, $category, $priceBuy, $priceSale, $idUser);
-$product->id;
 
 $lastProduct = new Product;
 $idProduct =  $lastProduct->lastLine();

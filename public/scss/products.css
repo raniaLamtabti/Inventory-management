@@ -1,25 +1,14 @@
 /* colors */
 /* Fonts */
 .product .topBar {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-
 .product .ctgries {
   display: none;
 }
-
 @media (min-width: 1024px) {
   .product .ctgries {
     display: inline-block;
@@ -28,29 +17,18 @@
     width: max-content;
   }
 }
-
 .product .main_bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   width: 90%;
   height: 37px;
   border-radius: 5px;
   margin: 10px;
   background: #fff;
-  -webkit-box-shadow: 0px 0px 18px rgba(0, 63, 92, 0.4);
-          box-shadow: 0px 0px 18px rgba(0, 63, 92, 0.4);
+  box-shadow: 0px 0px 18px rgba(0, 63, 92, 0.4);
 }
-
 .product .main_bar p {
   font-family: Archivo;
   font-weight: normal;
@@ -58,83 +36,54 @@
   text-align: center;
   color: #ef5675;
 }
-
 .product .main_bar .actnicn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
   visibility: hidden;
 }
-
 .product .main_bar .actnicn .icon1 {
   margin: 5%;
   width: 25px;
   height: 20px;
   fill: #EF5675;
 }
-
 .product .main_bar .actnicn .icon2 {
   margin: 5%;
   width: 25px;
   height: 20px;
   fill: #7A5195;
 }
-
 .product .main_bar .actnicn .icon3 {
   margin: 5%;
   width: 20px;
   height: 15px;
   fill: #FFA600;
 }
-
 .product .barToggle {
   height: 200px !important;
 }
-
 .product .iconRotation {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
-
 .product .bar {
   width: 90%;
   height: 45px;
-  -webkit-transition: height .5s ease-in-out;
-  transition: height .5s ease-in-out;
+  transition: height 0.5s ease-in-out;
   overflow: hidden;
   margin: 10px;
   border-radius: 5px;
   background: #fff;
-  -webkit-box-shadow: 0px 0px 18px rgba(0, 63, 92, 0.4);
-          box-shadow: 0px 0px 18px rgba(0, 63, 92, 0.4);
+  box-shadow: 0px 0px 18px rgba(0, 63, 92, 0.4);
   padding: 10px 0;
 }
-
 .product .bar .lable_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
-
 .product .bar p {
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -145,40 +94,21 @@
   text-align: center;
   color: #707070;
 }
-
 .product .bar .content {
   padding: 2% 0%;
 }
-
 .product .bar .content .labs {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   margin-top: 20px;
 }
-
 .product .bar .content .labs .lables .pinky {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   font-family: Archivo;
   font-weight: normal;
   font-size: 20px;
@@ -189,69 +119,42 @@
   width: -moz-max-content;
   width: max-content;
 }
-
 .product .bar .content .labs .lables .subbie {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }
-
 .product .bar .actnicn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
 }
-
 .product .bar .actnicn .icon1 {
   margin: 5%;
   width: 25px;
   height: 20px;
   fill: #EF5675;
 }
-
 .product .bar .actnicn .icon2 {
   margin: 5%;
   width: 25px;
   height: 20px;
   fill: #7A5195;
 }
-
 .product .bar .actnicn .icon3 {
   margin: 5%;
   width: 20px;
   height: 15px;
   fill: #FFA600;
-  -webkit-transition: -webkit-transform 1s ease-in;
-  transition: -webkit-transform 1s ease-in;
   transition: transform 1s ease-in;
-  transition: transform 1s ease-in, -webkit-transform 1s ease-in;
 }
-
 @media (min-width: 1024px) {
   .product .bar .actnicn .icon3 {
     display: none;
   }
-}
-/*# sourceMappingURL=products.css.map */
+}/*# sourceMappingURL=products.css.map */

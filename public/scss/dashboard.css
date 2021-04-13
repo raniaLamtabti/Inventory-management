@@ -1,80 +1,52 @@
 /* colors */
 /* Fonts */
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 .dashboard .analytics {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
   gap: 20px;
 }
-
 .dashboard .analytics .analytic {
   background-color: #7A5195;
   text-align: center;
   padding: 5% 4%;
   border-radius: 75px;
 }
-
 .dashboard .analytics .analytic svg {
   fill: #fff;
   width: 90%;
 }
-
 @media (min-width: 1025px) {
   .dashboard .analytics .analytic {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 }
-
 .dashboard .analytics .analytic .content h5 {
   font-size: 16px;
   text-transform: uppercase;
   color: #FFA600;
 }
-
 @media (min-width: 992px) {
   .dashboard .analytics .analytic .content h5 {
     font-size: 30px;
   }
 }
-
 .dashboard .analytics .analytic .content p {
   color: #FFF;
 }
-
 .dashboard .chart {
   margin-top: 50px;
 }
-
 .dashboard .chart select {
   width: 100%;
-}
-/*# sourceMappingURL=dashboard.css.map */
+}/*# sourceMappingURL=dashboard.css.map */

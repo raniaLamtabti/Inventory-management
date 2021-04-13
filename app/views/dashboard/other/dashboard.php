@@ -1,5 +1,6 @@
 <?php
 $cssLink = "../../../../public/scss/dashboard.css";
+$cssMain = "../../../../public/scss/main.css";
 $title = "Dashboard";
 $active= "dashboard";
 ?>
